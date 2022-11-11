@@ -1,0 +1,66 @@
+<form class="form" [formGroup]="regForm" (ngSubmit)="onSubmit()">
+  <label for="firstName">First Name</label>
+  <input
+    type="text"
+    name="firstName"
+    id="firstName"
+    formControlName="firstName"
+    placeholder="First Name"
+  />
+
+  <label for="lastName">Last Name</label>
+  <input
+    type="text"
+    name="lastName"
+    id="lastName"
+    formControlName="lastName"
+    placeholder="Last Name"
+  />
+
+  <label for="email">Email</label>
+  <input
+    type="email"
+    name="email"
+    id="email"
+    formControlName="email"
+    placeholder="email"
+  />
+
+  <label for="mobileNo">Mobile Number</label>
+  <input
+    type="text"
+    name="mobileNo"
+    id="mobileNo"
+    formControlName="mobileNo"
+    placeholder="Mobile Number"
+  />
+
+  <label for="password">Password</label>
+  <input
+    type="password"
+    name="password"
+    id="password"
+    formControlName="password"
+    placeholder="Password"
+  />
+
+  <label for="verify">Verify Password</label>
+  <input
+    type="verify"
+    name="verify"
+    id="verify"
+    formControlName="verify"
+    placeholder="Verify Password"
+  />
+
+  <label for="address">Address</label>
+  <input
+    type="text"
+    name="address"
+    id="address"
+    formControlName="address"
+    placeholder="Address"
+  />
+
+  <button type="submit">Submit</button>
+</form>
